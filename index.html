@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 1. Header cu numele site-ului și navigare -->
+    <header class="site-header">
+        <h1>City Explorer</h1>
+        <nav class="menu">
+            <a href="#destinatii">Destinații</a>
+            <a href="#planifica">Planifică</a>
+            <a href="#recomandari">Recomandări</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. Secțiunea Destinații -->
+        <section id="destinatii">
+            <h2>Destinații</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Roma</h3>
+                    <p><strong>Italia</strong></p>
+                    <p>Capitala antică, plină de istorie și monumente faimoase.</p>
+                    <p><em>Durată recomandată: 4 zile</em></p>
+                </article>
+                <article class="card featured"> <!-- Card evidențiat -->
+                    <h3>Lisabona</h3>
+                    <p><strong>Portugalia</strong></p>
+                    <p>Orașul celor șapte coline, faimos pentru pasteis de nata.</p>
+                    <p><em>Durată recomandată: 5 zile</em></p>
+                </article>
+                <article class="card">
+                    <h3>Paris</h3>
+                    <p><strong>Franța</strong></p>
+                    <p>Orașul luminilor și al îndrăgostiților.</p>
+                    <p><em>Durată recomandată: 3 zile</em></p>
+                </article>
+                <article class="card">
+                    <h3>Barcelona</h3>
+                    <p><strong>Spania</strong></p>
+                    <p>Arhitectura lui Gaudi și o atmosferă mediteraneană vibrantă.</p>
+                    <p><em>Durată recomandată: 4 zile</em></p>
+                </article>
+                <article class="card">
+                    <h3>Viena</h3>
+                    <p><strong>Austria</strong></p>
+                    <p>Muzică clasică, palate imperiale și un farmec istoric.</p>
+                    <p><em>Durată recomandată: 3 zile</em></p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3. Secțiunea Planifică -->
+        <section id="planifica">
+            <h2>Planifică excursia</h2>
+            <form class="plan-form">
+                <label for="name">Nume</label>
+                <input id="name" name="name" type="text" placeholder="Introdu numele tău">
+
+                <label for="destination">Destinație</label>
+                <select id="destination" name="destination">
+                    <option value="">Alege...</option>
+                    <option value="Roma">Roma</option>
+                    <option value="Lisabona">Lisabona</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Viena">Viena</option>
+                </select>
+
+                <label for="days">Număr de zile</label>
+                <input id="days" name="days" type="number" min="1" placeholder="Ex: 3">
+
+                <button type="submit">Planifică excursia</button>
+            </form>
+        </section>
+
+        <!-- 4. Secțiunea Recomandări -->
+        <section id="recomandari">
+            <h2>Recomandări</h2>
+            <ul>
+                <li>Verificați întotdeauna prognoza meteo înainte de a împacheta.</li>
+                <li>Cumpărați biletele pentru obiectivele turistice majore în avans pentru a evita cozile.</li>
+                <li>Păstrați o copie digitală a actelor de identitate pe telefon.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 5. Footer -->
+    <footer class="site-footer">
+        Numele Tău (Autor), 2026
+    </footer>
+</body>
+</html>
